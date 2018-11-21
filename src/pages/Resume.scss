@@ -1,0 +1,159 @@
+:global .resume-wrap {
+  position: relative;
+  display: block;
+  width: 100vw;
+  min-height: 100vh;
+  line-height: 1.6;
+
+  .visual {
+    height: 120px;
+    background-color: #888;
+  }
+
+  .resume {
+    position: relative;
+    font-size: 13px;
+
+    .personal {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: calc(100vh - 120px);
+      box-sizing: border-box;
+      background-color: #ccc;
+    }
+    .profile {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      padding-left: 250px;
+      box-sizing: border-box;
+    }
+    .personal {
+      .information,
+      .links {
+        padding: 25px;
+      }
+      .information {
+        text-align: center;
+        .picture {
+          display: inline-block;
+          width: 70%;
+          height: 0;
+          padding-bottom: 70%;
+          border-radius: 50%;
+          background-color: #000;
+        }
+      }
+      .info {
+        text-align: left;
+        padding: 20px 0 0;
+      }
+
+      .links {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  /** common style */
+
+  .sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+  }
+
+  .list-underline {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+
+    .item {
+      position: relative;
+      padding-top: 3px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      font-size: 12px;
+      letter-spacing: -1px;
+
+      &:after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+      a {
+        display: block;
+      }
+
+      .key {
+        float: left;
+        display: inline-block;
+        width: 40%;
+        font-weight: bold;
+      }
+      .key + .value {
+        float: left;
+        width: 60%;
+        color: #888;
+      }
+    }
+  }
+  .list-thumbnail {
+    margin: 0;
+    padding: 0;
+
+    .item {
+      position: relative;
+      padding-top: 3px;
+      font-size: 12px;
+      letter-spacing: -1.2px;
+      line-height: 38px;
+
+      &:after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+
+      a {
+        display: block;
+      }
+
+      .thumb {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        margin-left: 0;
+        background-color: #000;
+        border-radius: 50%;
+        color: #fff;
+        vertical-align: middle;
+      }
+      .key {
+        display: inline;
+        text-indent: 5px;
+        font-weight: bold;
+      }
+
+      .key + .value {
+        display: inline;
+        color: #888;
+      }
+    }
+  }
+  .paragraph {
+    display: block;
+    padding: 15px 30px 15px;
+
+    .content {
+      padding: 5px 0;
+    }
+  }
+}
